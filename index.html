@@ -1,79 +1,91 @@
-<!DOCTYPE html><html lang=fr><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Sélection de cartes</title><script src=https://cdn.tailwindcss.com></script><script src=https://cdn.jsdelivr.net/npm/chart.js></script><body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sélection de cartes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
 
-  <div class="bg-white max-w-4xl p-8 rounded-2xl shadow-lg space-y-10 w-full">
+  <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-4xl space-y-10">
 
-    <div class="text-center text-gray-700 text-lg">
-      <span id=info>Selectionne les cartes</span>
+    <div class="text-center text-lg text-gray-700">
+      <span id="info">Selectionne les cartes</span>
     </div>
     
-    
+    <!-- Carte joueur 1 -->
     <div>
-      <h2 class="font-semibold text-center text-gray-700 text-lg">Carte 1 joueur:</h2>
-      <div class="flex flex-wrap gap-2 justify-center" data-index=0>
-        
+      <h2 class="text-lg font-semibold text-gray-700  text-center">Carte 1 joueur:</h2>
+      <div class="flex flex-wrap justify-center gap-2" data-index="0">
+        <!-- Boutons générés en JS -->
       </div>
     </div>
 
-    
+    <!-- Carte joueur 2 -->
     <div>
-      <h2 class="font-semibold text-center text-gray-700 text-lg">Carte 2 joueur:</h2>
-      <div class="flex flex-wrap gap-2 justify-center" data-index=1>
-        
+      <h2 class="text-lg font-semibold text-gray-700 text-center">Carte 2 joueur:</h2>
+      <div class="flex flex-wrap justify-center gap-2" data-index="1">
+        <!-- Boutons générés en JS -->
       </div>
     </div>
 
-    
+    <!-- Carte joueur 3 -->
     <div>
-        <h2 class="font-semibold text-center text-gray-700 text-lg">Carte 3 joueur :</h2>
-        <div class="flex flex-wrap gap-2 justify-center" data-index=2>
-            
+        <h2 class="text-lg font-semibold text-gray-700 text-center">Carte 3 joueur :</h2>
+        <div class="flex flex-wrap justify-center gap-2" data-index="2">
+            <!-- Boutons générés en JS -->
         </div>
     </div>
 
-    
+    <!-- Carte joueur 4 -->
     <div>
-        <h2 class="font-semibold text-center text-gray-700 text-lg">Carte 4 joueur :</h2>
-        <div class="flex flex-wrap gap-2 justify-center" data-index=3>
-          
+        <h2 class="text-lg font-semibold text-gray-700 text-center">Carte 4 joueur :</h2>
+        <div class="flex flex-wrap justify-center gap-2" data-index="3">
+          <!-- Boutons générés en JS -->
         </div>
     </div>
 
-    
+    <!-- Carte joueur 5 -->
     <div>
-        <h2 class="font-semibold text-center text-gray-700 text-lg">Carte 5 joueur :</h2>
-        <div class="flex flex-wrap gap-2 justify-center" data-index=4>
-          
+        <h2 class="text-lg font-semibold text-gray-700 text-center">Carte 5 joueur :</h2>
+        <div class="flex flex-wrap justify-center gap-2" data-index="4">
+          <!-- Boutons générés en JS -->
         </div>
     </div>
 
 
-    
+    <!-- Carte du croupier -->
     <div>
-      <h2 class="font-semibold text-center text-gray-700 text-lg">Carte du croupier :</h2>
-      <div class="flex flex-wrap gap-2 justify-center" data-index=5>
-        
+      <h2 class="text-lg font-semibold text-gray-700 text-center">Carte du croupier :</h2>
+      <div class="flex flex-wrap justify-center gap-2" data-index="5">
+        <!-- Boutons générés en JS -->
       </div>
     </div>
 
-    <div class="flex justify-center mt-6 w-full">
-      <button id=reset class="bg-red-600 font-semibold hover:bg-red-700 px-6 py-2 rounded-lg shadow text-white transition">
+    <div class="w-full flex justify-center mt-6">
+      <button
+        id="reset"
+        class="px-6 py-2 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition"
+      >
         Réinitialiser
       </button>
     </div>
 
 
-    <div class="flex justify-center w-full">
-      <a href=/statistics.html>
-      <button class="bg-orange-600 font-semibold hover:bg-orange-700 px-6 py-2 rounded-lg shadow text-white transition">
+    <div class="w-full flex justify-center">
+      <a href="./statistics/index.html">
+      <button 
+        class="px-6 py-2 bg-orange-600 text-white font-semibold rounded-lg shadow hover:bg-orange-700 transition"
+      >
         Statistiques
       </button></a>
     </div>
   </div>
  
 
-
-  <script src=/blackjackai.dbd86ad8.js></script>
-  <script src=/blackjackai.a2359176.js></script>
+  <script type="module" src="script.js"></script>
  
-
-
+</body>
+</html>
